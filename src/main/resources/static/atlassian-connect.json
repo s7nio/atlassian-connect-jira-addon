@@ -1,0 +1,33 @@
+{
+     "name": "Add-on Demo",
+     "description": "Add-on description.",
+     "key": "de.codecentric.atlassian.connect.jira.addon.demo",
+     "version": "0.1",
+     "baseUrl": "http://localhost:8080",
+     "vendor": {
+         "name": "codecentric AG",
+         "url": "https://codecentric.de"
+     },
+     "apiVersion": 1,
+     "authentication": {
+         "type": "none"
+     },
+     "lifecycle": {
+        "installed": "/lifecycle/installed",
+        "uninstalled": "/lifecycle/uninstalled",
+        "enabled": "/lifecycle/enabled",
+        "disabled": "/lifecycle/disabled"
+     },
+     "modules": {
+         "generalPages": [
+             {
+                 "url": "/index.html",
+                 "key": "index",
+                 "location": "system.top.navigation.bar",
+                 "name": {
+                     "value": "Add-on Page"
+                 }
+             }
+         ]
+     }
+ }
